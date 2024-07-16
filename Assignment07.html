@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website</title>
+    <link rel="stylesheet" href="Assignment07.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#course">Course</a>
+                    <ul class="submenu">
+                        <li><a href="https://gaia.cs.umass.edu/kurose_ross/authors.php" target="_blank">UMass Course Authors</a></li>
+                        <li><a href="http://w3schools.com" target="_blank">W3Schools</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/web-development/" target="_blank">GeeksforGeeks Web Development</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#browser">Browser</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Navigator</a>
+                            <ul class="sub-submenu">
+                                <li>Navigator - appName: <span id="appName"></span></li>
+                                <li>Navigator - product: <span id="product"></span></li>
+                                <li>Navigator - appVersion: <span id="appVersion"></span></li>
+                                <li>Navigator - userAgent: <span id="userAgent"></span></li>
+                                <li>Navigator - platform: <span id="platform"></span></li>
+                                <li>Navigator - language: <span id="language"></span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Window</a>
+                            <ul class="sub-submenu">
+                                <li>innerHeight: <span id="innerHeight"></span></li>
+                                <li>innerWidth: <span id="innerWidth"></span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Screen</a>
+                            <ul class="sub-submenu">
+                                <li>width: <span id="screenWidth"></span></li>
+                                <li>height: <span id="screenHeight"></span></li>
+                                <li>availWidth: <span id="availWidth"></span></li>
+                                <li>availHeight: <span id="availHeight"></span></li>
+                                <li>colorDepth: <span id="colorDepth"></span></li>
+                                <li>pixelDepth: <span id="pixelDepth"></span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Location</a>
+                            <ul class="sub-submenu">
+                                <li>href: <span id="href"></span></li>
+                                <li>hostname: <span id="hostname"></span></li>
+                                <li>pathname: <span id="pathname"></span></li>
+                                <li>protocol: <span id="protocol"></span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Geolocation</a>
+                            <ul class="sub-submenu">
+                                <li>Latitude: <span id="latitude"></span></li>
+                                <li>Longitude: <span id="longitude"></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                 <li class="nav-item">
+                    <a href="#about">About</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Developer</a>
+                            <ul class="sub-submenu">
+                                <li>
+                                    <p>Hi, I'm Raisul Islam, the developer of this page. I'm a student, learning web development, and this project showcases some of my skills in HTML, CSS, and JavaScript.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Email Me</a>
+                            <ul class="sub-submenu">
+                                <li><a href="mailto:raisulislam97@gmail.com">Send me an Email</a></li>
+                            </ul>
+                        </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="course">
+        <h1>Course</h1>
+        <p>Details about the course.</p>
+    </section>
+     <section id="Browser">
+        <h1>browser</h1>
+        <p>
+           Details about the browser
+        </p>
+    </section>
+    <section id="about">
+        <h1>About</h1>
+        <pre>
+            If you have any question, please email me at
+            raisulislam97@gamail.com
+        </pre>
+    </section>
+
+    <section>
+        <script src="Assignment07.js"></script>
+    </section>
+</body>
+</html>

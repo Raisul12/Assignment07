@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 1em 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    position: relative; /* Needed for submenu positioning */
+    margin: 0 1em;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    color: #ff6347;
+}
+
+.submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    min-width: 200px; /* Adjusted for wider submenus */
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu a {
+    padding: 0.5em 1em;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background-color: #ff6347;
+}
+
+.nav-item:hover .submenu {
+    display: block;
+}
+
+.sub-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+    min-width: 200px;
+}
+
+.sub-submenu li {
+    padding: 0.5em 1em;
+    color: white;
+}
+
+.sub-submenu li a {
+    color: white;
+}
+
+.submenu li:hover .sub-submenu {
+    display: block;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+#course {
+    background-color: rgba(244, 244, 244, 0.8);
+}
+
+#about {
+    background-color: rgba(226, 226, 226, 0.8);
+}
+
+#contact {
+    background-color: rgba(204, 204, 204, 0.8);
+}
